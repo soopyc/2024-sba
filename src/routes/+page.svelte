@@ -1,2 +1,6 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+
+<div>
+    <!-- TODO: add -->
+    <h1>Welcome to SPKC!</h1>
+    <p>This is a temporary placeholder.</p>
+</div>
