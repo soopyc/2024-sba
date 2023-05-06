@@ -2,7 +2,9 @@
   import '../app.postcss';
   import '../app.sass';
 
-  import RightFromBracket from '$lib/icons/right_from_bracket.svelte';
+  import Fa from 'svelte-fa/src/fa.svelte';
+  import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
+
   import { page } from '$app/stores';
 </script>
 
@@ -64,14 +66,14 @@
   <!-- Sidebar -->
   <div class="drawer-side">
     <label for="main-drawer" class="drawer-overlay" />
-    <ul class="menu p-4 w-80 bg-base-100 gap-2">
+    <ul class="menu p-4 w-56 md:w-80 bg-base-100 md:gap-2 text-sm md:text-base">
       <li class="menu-title"><span>Site navigation</span></li>
       <li><a href="/" class:bg-info={$page.url.pathname === '/'}>Home</a></li>
       <li><a href="/activities" class:bg-info={$page.url.pathname === '/activities'}>Activities</a></li>
       <li><a href="/about" class:bg-info={$page.url.pathname === '/about'}>About Us</a></li>
       <li>
         <a class="hover-bordered bg-warning hover:bg-warning/70" href="//www.spkc.edu.hk">
-          <RightFromBracket /> Return to Main Site
+          <Fa icon={faRightFromBracket} />Return to Main Site
         </a>
       </li>
     </ul>
