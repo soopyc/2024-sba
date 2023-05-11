@@ -2,7 +2,7 @@
   import '../app.postcss';
   import '../app.sass';
 
-  import Fa from 'svelte-fa/src/fa.svelte';
+  import Fa from 'svelte-fa';
   import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 
   import { page } from '$app/stores';
