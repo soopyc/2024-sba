@@ -1,6 +1,8 @@
 # 2024-sba
 School-Based Assessment for the 2024 HKDSE
 
+The website is now live at https://2024.sba.mockups.soopy.moe/
+
 ## Build and deployment instructions
 Practically the same as other svelte sites.
 
@@ -31,6 +33,6 @@ The resulting directory can be found in `$PWD/build`.
 ## License
 The source code is licensed under BSD 3-Clause License.
 
-Used images and videos are licensed separately. 
+Used images and videos are licensed separately.
 
 <!-- students against homophobia and transphobia! say no to any kind of bigotry. -->
