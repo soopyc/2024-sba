@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+PRODID:-//Mozilla.org/NONSGML Mozilla Calendar V1.1//EN
+VERSION:2.0
+BEGIN:VEVENT
+CREATED:20230514T162356Z
+LAST-MODIFIED:20230514T163321Z
+DTSTAMP:20230514T163321Z
+UID:7d96b672-7067-47c5-a55c-9f05eadd755e
+SUMMARY:Stewards Pooi Kei College 20th Anniversary Open Day
+CATEGORIES:Anniversary
+DTSTART;VALUE=DATE:20231111
+DTEND;VALUE=DATE:20231113
+TRANSP:TRANSPARENT
+URL:https://www.spkc.edu.hk
+URL:https://2024.sba.mockups.soopy.moe/
+LOCATION:Stewards Pooi Kei College, 56 Siu Lek Yuen Road, Siu Lek Yuen, Hong
+ Kong
+DESCRIPTION:NOTE: This is just a mockup! The dates are subject to change. Pl
+ ease do not use\nthis as a reference.\n\nToday marks the day of SPKC's 20th
+  anniversary! Join us to celebrate this\nimportant milestone\, filled with
+ exciting events and activities!\n\nLocation: 56 Siu Lek Yuen Road\, Siu Lek
+  Yuen\, Shatin\, New Territories.\n\nLorem ipsum dolor sit amet\, consectet
+ ur adipiscing elit. Sed non risus.\nSuspendisse lectus tortor\, dignissim s
+ it amet\, adipiscing nec\, ultricies sed\,\ndolor. Cupcake ipsum dolor sit
+ amet sweet roll. Sugar plum chupa chups sesame\nsnaps sweet roll powder. Cr
+ as elementum ultrices diam. Maecenas ligula massa\,\nvarius a\, semper cong
+ ue\, euismod non\, mi. Powder liquorice cake pastry. Toffee\ncake sweet rol
+ l tart cake macaroon. Fusce venenatis sapien vitae augue mollis\,\nvel fini
+ bus justo ultrices. Nullam tempus volutpat felis\, vitae placerat nunc.\nTi
+ ramisu chocolate bar powder marzipan. Nunc bibendum nibh sed turpis dictum
+ imperdiet.\n\nOfficial Website: https://www.spkc.edu.hk\nAnniversary Websit
+ e: https://2024.sba.mockups.soopy.moe/
+CLASS:PUBLIC
+END:VEVENT
+END:VCALENDAR
