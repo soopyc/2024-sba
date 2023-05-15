@@ -16,7 +16,7 @@
   <input id="main-drawer" type="checkbox" class="drawer-toggle" />
   <div class="drawer-content flex flex-col">
     <!-- navbar -->
-    <div class="navbar serif bg-primary shadow sticky top-0 min-h-fit lg:px-10">
+    <div class="navbar serif bg-primary shadow sticky top-0 min-h-fit lg:px-10 z-10">
       <div class="flex-auto m-auto">
         <div class="flex-none lg:hidden mx-3" title="Site navigation drawer">
           <label for="main-drawer" class="btn btn-square btn-ghost">
