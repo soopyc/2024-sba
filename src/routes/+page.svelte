@@ -77,7 +77,7 @@
             <p class="text-lg pt-2">until Anniversary Open Day</p>
             <p class="mt-2">
                 <a href="/event.ics">
-                    <button class="btn btn-primary btn-sm xl:btn-lg">
+                    <button class="btn btn-primary btn-sm lg:btn-md xl:btn-lg">
                         <Fa icon={faCalendarAlt} class="mr-2" /> Add to Calendar
                     </button>
                 </a>
