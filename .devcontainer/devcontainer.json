@@ -11,7 +11,8 @@
 				"strangerelics.clarity-cute",
 				"PKief.material-icon-theme",
 				"1YiB.svelte-bundle",
-				"naumovs.color-highlight"
+				"naumovs.color-highlight",
+				"dbaeumer.vscode-eslint"
 			]
 		}
 	},

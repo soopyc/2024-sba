@@ -41,6 +41,7 @@
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "daisyui": "^2.51.6",
+    "maplibre-gl": "^2.4.0",
     "svelte-fa": "^3.0.3"
   }
 }
