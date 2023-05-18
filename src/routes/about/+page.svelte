@@ -21,7 +21,9 @@
 <!-- Section 1: School location -->
 <div />
 
-<div>
+<div class="mx-5">
+    Lorem ipsum dolor sit amet. 
+
     Culpa id esse ex nulla proident consectetur id culpa consectetur ut excepteur. Aliquip elit voluptate sint occaecat
     dolor ipsum velit do mollit in. Amet Lorem sit est non. In laboris cupidatat cillum anim amet qui sint consequat
     officia tempor quis esse occaecat. Aliqua adipisicing irure ipsum ad nulla ullamco commodo dolor ut mollit. Minim ea

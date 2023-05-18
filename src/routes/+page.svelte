@@ -8,7 +8,7 @@
 
     dayjs.extend(dayjsDuration);
 
-    export const eventStartDay = new Date(1699669800000);
+    export const eventStartDay = new Date(1699669906699);
 
     export let month = 0;
     export let day = 0;
@@ -29,6 +29,10 @@
         clearInterval(countdownTimerInterval);
     });
 </script>
+
+<svelte:head>
+    <meta name="description" content="20th Anniversary of Stewards Pooi Kei College" />
+</svelte:head>
 
 <div class="w-full h-full">
     <div class="relative inline-block">
@@ -75,11 +79,9 @@
                 </div>
             </div>
             <p class="text-lg pt-2">until Anniversary Open Day</p>
-            <p class="mt-2">
-                <a href="/event.ics">
-                    <button class="btn btn-primary btn-sm lg:btn-md xl:btn-lg">
-                        <Fa icon={faCalendarAlt} class="mr-2" /> Add to Calendar
-                    </button>
+            <p class="mt-2">  <!-- TODO: only works on safari.-->
+                <a href="/event.ics" role="button" class="btn btn-primary btn-sm lg:btn-md xl:btn-lg">
+                    <Fa icon={faCalendarAlt} class="mr-2" /> Add to Calendar
                 </a>
             </p>
         </div>

@@ -12,7 +12,8 @@
 				"PKief.material-icon-theme",
 				"1YiB.svelte-bundle",
 				"naumovs.color-highlight",
-				"dbaeumer.vscode-eslint"
+				"dbaeumer.vscode-eslint",
+				"bradlc.vscode-tailwindcss"
 			]
 		}
 	},
