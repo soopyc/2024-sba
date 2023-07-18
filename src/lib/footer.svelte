@@ -10,9 +10,11 @@
         <p>&copy; Stewards Pooi Kei College 2023</p>
     </div>
 
-    <div class="flex gap-2 ">
-        <a href="tel:+852-2635-0100">
-            <Fa icon={faPhone} />
-        </a>
+    <div>
+        <div class="flex gap-2 ">
+            <a href="tel:+852-2635-0100">
+                <Fa icon={faPhone} />
+            </a>
+        </div>
     </div>
 </footer>
