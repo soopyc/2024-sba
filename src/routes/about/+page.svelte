@@ -1,10 +1,12 @@
 <script>
+	import Heading from "$lib/heading.svelte";
+
 	import { PUBLIC_GCP_API_KEY } from "$env/static/public";
 	export const LOC = "Stewards Pooi Kei College, 56 Siu Lek Yuen Road, Sha Tin"
 </script>
 
 <!-- Hero text about page and image -->
-<div class="hero min-h-[40vh] place-items-start mb-4" id="about-hero">
+<div class="hero min-h-[35vh] place-items-start mb-4" id="about-hero">
     <div class="hero-overlay" />
     <div class="hero-content text-left text-neutral-content justify-self-start self-end">
         <div class="pl-10">
@@ -15,11 +17,11 @@
     </div>
 </div>
 
-<!-- Section 1: School location -->
 
-<div class="max-w-screen-xl mx-auto">
-	<div>
-		<h2 class="text-3xl md-2">School Location</h2>
+<div class="max-w-full mx-24">
+	<!-- Section 1: School location -->
+	<div class="mb-5">
+		<Heading id="location" level={2}>School Location</Heading>
 		<iframe
 			loading="lazy"
 			referrerpolicy="no-referrer-when-downgrade"
@@ -29,19 +31,16 @@
 		/>
 	</div>
 
-    Lorem ipsum dolor sit amet.
+	<!-- TODO: Section x: Contact form -->
+	<!-- Requires server, will need to modify deployment code later. -->
+	<div class="mb-5">
+		<Heading id="contact" level={2}>Contact Us</Heading>
+		<p>
 
-    Culpa id esse ex nulla proident consectetur id culpa consectetur ut excepteur. Aliquip elit voluptate sint occaecat
-    dolor ipsum velit do mollit in. Amet Lorem sit est non. In laboris cupidatat cillum anim amet qui sint consequat
-    officia tempor quis esse occaecat. Aliqua adipisicing irure ipsum ad nulla ullamco commodo dolor ut mollit. Minim ea
-    nostrud pariatur labore sunt nulla Lorem. Irure culpa laboris ullamco reprehenderit ex aliquip. Proident incididunt
-    eu commodo voluptate sit laboris et laboris exercitation tempor labore mollit quis exercitation. Fugiat minim Lorem
-    qui amet proident reprehenderit voluptate elit magna aliqua officia. Proident sit in culpa non cupidatat sint
-    adipisicing anim minim occaecat sunt ullamco aliquip.
+		</p>
+	</div>
 </div>
 
-<!-- TODO: Section x: Contact form -->
-<!-- Requires server, will need to modify deployment code later. -->
 
 <style lang="scss">
     #about-hero {
