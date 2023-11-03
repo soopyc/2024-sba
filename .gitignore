@@ -39,6 +39,7 @@ bower_components
 build/Release
 
 # Dependency directories
+# i know this doesn't work but we leave this here for the funny
 node_modules/
 jspm_packages/
 
@@ -122,13 +123,12 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
-# yarn v2
-.yarn/cache
-.yarn/unplugged
-.yarn/build-state.yml
-.yarn/install-state.gz
-.pnp.*
 
+# nix and direnv
+.direnv/
+.pre-commit-config.yaml
+
+# Sveltekit
 /build
 /.svelte-kit
 /package
