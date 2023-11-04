@@ -1,6 +1,5 @@
 {
   perSystem = {
-    self',
     pkgs,
     config,
     lib,
@@ -9,7 +8,7 @@
     devShells.default = pkgs.mkShell {
       shellHook = ''
         rm -vf ./node_modules
-        ln -sf ${self'.packages.nodeDeps}/lib/node_modules ./node_modules
+        ln -sf ${config.soopyc.sba-2024._nodeDeps}/lib/node_modules ./node_modules
         ${config.pre-commit.installationScript}
       '';
       packages = with pkgs; [

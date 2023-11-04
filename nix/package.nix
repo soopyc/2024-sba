@@ -1,41 +1,36 @@
 {
   perSystem = {
+    config,
     pkgs,
     lib,
     ...
   }: {
-    packages.default = pkgs.stdenvNoCC.mkDerivation (finalAttrs: {
-      name = "@soopyc/2024-sba";
-      src = ./.;
+    # packages.default = pkgs.stdenvNoCC.mkDerivation (finalAttrs: {
+    #   name = "@soopyc/2024-sba";
+    #   src = ./.;
 
-      # https://github.com/NixOS/nixpkgs/blob/61de8ba44d17dfa0cbcb3103fd41157fba2343a0/pkgs/by-name/ve/vesktop/package.nix#L40
-      pnpm-deps = pkgs.stdenvNoCC.mkDerivation (finalAtts': {
-        inherit (finalAttrs) src;
+    #   buildPhase = ''
 
-        name = "${finalAttrs.name}-pnpm-deps";
-        outputHash = lib.fakeHash;
-        dontFixup = true;
-        outputHashMode = "recursive";
+    #   '';
+    # });
+    packages.default = pkgs.stdenvNoCC.mkDerivation {
+      pname = "2024-sba";
+      version = config.soopyc.sba-2024._node2nix.args.version;
 
-        nativeBuildInputs = with pkgs; [
-          jq
-          moreutils
-          nodePackages.pnpm
-        ];
+      src = builtins.path {
+        path = ../.;
+        # filter function to ignore node_modules
+        filter = path: type: baseNameOf path != "node_modules";
+      };
 
-        installPhase = ''
-          export HOME=$(mktemp -d)
-          pnpm config set store-dir $out
-          pnpm install --frozen-lockfile --ignore-script
+      nativeBuildInputs = with pkgs; [
+        nodePackages.npm
+      ];
 
-          rm -fr $out/v3/tmp
-          for file in $(find $out -name "*.json"); do
-            sed -i -E -e 's/"checkedAt":[0-9]+,//g' $f
-            jq --sort-keys . $f | sponge $f
-          done
-
-        '';
-      });
-    });
+      buildPhase = ''
+        cp -sv ${config.soopyc.sba-2024._nodeDeps}/lib/node_modules ./
+        npm run build
+      '';
+    };
   };
 }

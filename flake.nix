@@ -26,6 +26,7 @@
         ...
       }: {
         soopyc.sba-2024.nodeVersion = pkgs.nodejs_20;
+        soopyc.sba-2024.enable = true;
       };
     };
 }
