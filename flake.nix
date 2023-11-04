@@ -12,14 +12,20 @@
       imports = [
         inputs.pre-commit-hooks.flakeModule
         ./nix/node
+        ./nix/module.nix
         ./nix/pre-commit.nix
         ./nix/shell.nix
         ./nix/package.nix
         ./nix/docker.nix
+        ./nix/formatter.nix
       ];
 
-      perSystem = {pkgs, ...}: {
-        formatter = pkgs.alejandra;
+      perSystem = {
+        pkgs,
+        options,
+        ...
+      }: {
+        soopyc.sba-2024.nodeVersion = pkgs.nodejs_20;
       };
     };
 }

@@ -23,7 +23,7 @@
             --output $node2nix_root/node-packages.nix \
         '')
         node2nix
-        nodejs_20
+        config.soopyc.sba-2024.nodeVersion
       ];
     };
   };
