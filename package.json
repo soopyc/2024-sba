@@ -43,7 +43,6 @@
 		"@fortawesome/free-solid-svg-icons": "^6.4.0",
 		"daisyui": "^2.52.0",
 		"dayjs": "^1.11.9",
-		"maplibre-gl": "^2.4.0",
 		"svelte-fa": "^3.0.4"
 	},
 	"volta": {
