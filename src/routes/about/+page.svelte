@@ -1,7 +1,7 @@
 <script>
 	import Heading from "$lib/heading.svelte";
 
-	import { PUBLIC_GCP_API_KEY } from "$env/static/public";
+	import { env } from "$env/dynamic/public";
 	export const LOC = "Stewards Pooi Kei College, 56 Siu Lek Yuen Road, Sha Tin"
 </script>
 
@@ -17,7 +17,6 @@
     </div>
 </div>
 
-
 <div class="max-w-full mx-24">
 	<!-- Section 1: School location -->
 	<div class="mb-5">
@@ -26,7 +25,7 @@
 			loading="lazy"
 			referrerpolicy="no-referrer-when-downgrade"
 			title="GMaps embed for the location of SPKC."
-			src="https://www.google.com/maps/embed/v1/place?key={PUBLIC_GCP_API_KEY}&q={encodeURI(LOC)}"
+			src="https://www.google.com/maps/embed/v1/place?key={env.PUBLIC_GCP_API_KEY}&q={encodeURI(LOC)}"
 			class="border-none w-full min-h-[25em]"
 		/>
 	</div>
