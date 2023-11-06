@@ -127,6 +127,10 @@ dist
 # nix and direnv
 .direnv/
 .pre-commit-config.yaml
+result
+
+# nix hacks
+.cache/
 
 # Sveltekit
 /build
