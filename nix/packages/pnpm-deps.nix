@@ -1,4 +1,5 @@
 {
+  # lib,
   self,
   src,
   pkgs,
@@ -36,6 +37,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     done
   '';
 
-  outputHash = "sha256-fqoc353kQUr4mw0u4mmavTjwh3oo/Swl6oL9tLWxR8A=";
+  outputHash = "sha256-QafCTMBPFNyeW2w1nj3icH7Jl5LG/ZTETppAFIjev+8=";
   outputHashMode = "recursive";
 })
