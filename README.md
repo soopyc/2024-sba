@@ -49,6 +49,11 @@ They deviate from the standard create-svelte layout, which are documented here f
 - we cannot write to `node_modules/*`, but vite uses `node_modules/.vite` for caching by default.
   while this is a non-issue while building, using the dev server requires the cache.
   - solution: create a new `.cache/` directory and reroute cacheDir in vite.config.ts to `.cache/vite`
+- **pnpm:** pnpm uses a content-addressable store, which is emulated with a nix package. the `store-dir` option in
+  `.npmrc` is set accordingly (automatically, via a devshell hook.)
+- **pnpm:** side effect cache is enabled by default in pnpm v7.0.0. ([changelog](https://pnpm.io/blog/2022/12/30/yearly-update#side-effects-cache-since-v700))
+  This causes some issues with the nix shell, (not a big issue per-se, but preventable
+  warnings are annoying,) so it is disabled locally.
 
 ### dev(s)hell
 
