@@ -131,6 +131,9 @@ result
 
 # nix hacks
 .cache/
+.npmrc
+node_modules
+vite.config.ts
 
 # Sveltekit
 /build
