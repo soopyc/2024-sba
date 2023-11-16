@@ -4,13 +4,13 @@
   src,
   pkgs,
   config,
-  package,
+  npmPackage,
   nodePackages,
   stdenvNoCC,
 }:
 stdenvNoCC.mkDerivation (finalAttrs: {
-  pname = "${config.soopyc.sba-2024.name}-pnpm-deps";
-  version = "${package.version}+${self.shortRev or self.dirtyShortRev}";
+  pname = "${config.soopyc.sba-2024.name}-pnpm-store";
+  version = "${npmPackage.version}+${self.shortRev or self.dirtyShortRev}";
 
   src = builtins.path {
     path = src;
@@ -38,6 +38,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
   '';
 
   # outputHash = lib.fakeHash;
-  outputHash = "sha256-boQ+YrIMFMk2fUE0hAdItPtSdZXqmu6cYzMSjZFmr5I=";
+  outputHash = "sha256-bwSteUl8uYRAgrhFSDMWzSrp/AZtDqaRS8zYyDIk23s=";
   outputHashMode = "recursive";
 })

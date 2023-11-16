@@ -1,4 +1,7 @@
-update:
+install:
+	pnpm install
+
+update interactive="false":
 	#!/usr/bin/env bash
 	set -euxo pipefail
 

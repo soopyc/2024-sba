@@ -9,7 +9,7 @@ export default defineConfig({
 	plugins: [sveltekit()],
 	server: {
 		fs: {
-			allow: ['/nix/store/49qyk977rcdgq0lkcyazxyan0wbiy8hh-soopyc-2024-sba-node-modules-0.0.1+d054511-dirty'],
+			allow: ['@nodeModules@'],
 		},
 	},
 });
