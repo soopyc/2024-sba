@@ -42,6 +42,7 @@
         just
         config.soopyc.sba-2024.nodeVersion
         nodePackages.pnpm
+        pre-commit
       ];
     };
   };

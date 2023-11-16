@@ -8,7 +8,8 @@
 
     dayjs.extend(dayjsDuration);
 
-    export const eventStartDay = new Date(1699669906699);
+    // export const eventStartDay = new Date(1699669906699);
+		export const eventStartDay = new Date().valueOf() + 3213214;
 
     export let month = 0;
     export let day = 0;
@@ -17,7 +18,7 @@
     export let second = 0;
 
     const countdownTimerInterval = setInterval(() => {
-        let timeLeft = dayjs.duration(eventStartDay.valueOf() - new Date().valueOf());
+        let timeLeft = dayjs.duration(eventStartDay - new Date().valueOf());
         month = timeLeft.months();
         day = timeLeft.days();
         hour = timeLeft.hours();
